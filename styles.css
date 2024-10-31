@@ -6,6 +6,9 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: #000;
     color: #00FF00;
     overflow-x: hidden;
@@ -32,11 +35,11 @@ header p {
 }
 
 main {
+    flex: 1;
     padding: 20px;
     width: 80%;
     margin: auto;
 }
-
 article {
     margin-bottom: 20px;
     border: 1px solid #00FF00;
@@ -51,8 +54,14 @@ article:hover {
 article h2 {
     font-size: 2rem;
     margin-bottom: 10px;
-    color: #fff;
+    color: hsl(125, 97%, 47%);
     animation: fadeInUp 1s ease;
+}
+
+article h1{
+    font-size: 1.5rem;
+    color: #ed6511;
+    font-family: 'Scary Halloween Font', 'monospace'
 }
 
 article p {
@@ -102,6 +111,55 @@ button:hover {
 .back-link:hover {
     color: #007700;
 }
+
+footer#contact {
+    padding: 30px;
+    text-align: center;
+    color: #e4ebe4;
+    margin-top: 40px;
+    border-top: 2px solid #00FF00;
+}
+
+footer h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #00FF00;
+    text-shadow: 0 0 5px #00FF00;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+footer p {
+    font-size: 1.1rem;
+    color: #cccccc;
+    margin-bottom: 15px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer li {
+    font-size: 1rem;
+    margin: 10px 0;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+footer li:hover {
+    color: #00FF00;
+    transform: translateX(5px);
+}
+
+footer a {
+    color: #00FF00;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #00cc00;
+    text-shadow: 0px 0px 5px #00cc00;
+}
+
 
 @keyframes blink {
     50% {
