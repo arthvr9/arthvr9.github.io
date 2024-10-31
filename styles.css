@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    background-color: #000;
+    color: #00FF00;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #00FF00;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #e4ebe4;
+    animation: glitch 1.5s infinite;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #e4ebe4;
+    animation: fadeIn 2s ease-in-out;
+}
+
+main {
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+article {
+    margin-bottom: 20px;
+    border: 1px solid #00FF00;
+    padding: 15px;
+    transition: transform 0.3s;
+}
+
+article:hover {
+    transform: scale(1.02);
+}
+
+article h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #fff;
+    animation: fadeInUp 1s ease;
+}
+
+article p {
+    font-size: 1rem;
+    color: #fff;
+}
+
+button {
+    background: #00FF00;
+    color: #000;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #007700;
+}
+
+#comments-section {
+    margin-top: 15px;
+    color: #00FF00;
+    animation: slideDown 0.5s ease;
+}
+
+.cursor {
+    animation: blink 1s steps(2, start) infinite;
+    color: #00FF00;
+}
+
+.article-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.back-link {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #00FF00;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.back-link:hover {
+    color: #007700;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes glitch {
+    0% {
+        text-shadow: 2px 2px #5eff00, -2px -2px #22bb48be;
+    }
+    50% {
+        text-shadow: -2px -2px #5eff00, 2px 2px #22bb48be;
+    }
+    100% {
+        text-shadow: 2px 2px #5eff00, -2px -2px #22bb48be;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
