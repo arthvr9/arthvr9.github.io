@@ -21,6 +21,14 @@ header {
     animation: fadeIn 1.5s ease-in-out;
 }
 
+.date {
+    color: #494957;
+    font-size: 0.9em; /* Tamanho menor para destacar menos */
+    font-style: italic; /* Deixa o texto em itálico */
+    margin-bottom: 0.5em; /* Espaçamento abaixo */
+}
+
+
 header h1 {
     font-size: 3rem;
     margin-bottom: 10px;
